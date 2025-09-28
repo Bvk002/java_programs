@@ -10,9 +10,9 @@ public class array {
 		System.out.println("Enter Number Of Students");
 		int s=sc.nextInt();
 		int[][][] a=new int[n][m][s];
-		for(int i=0;i<n;i++) {
-			for(int j=0;j<m;j++) {
-				for(int k=0;k<s;k++) {
+		for(int i=0;i<a.length;i++) {
+			for(int j=0;j<a[i].length;j++) {
+				for(int k=0;k<a[i][j].length;k++) {
 					System.out.println("Enter The School Of "+(i+1)+" and Class Of "+(j+1)+" and Student Of "+(k+1));
 					a[i][j][k]=sc.nextInt();
 				}
@@ -28,5 +28,6 @@ public class array {
 		}
 		sc.close();
 	}
+
 
 }
